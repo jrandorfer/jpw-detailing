@@ -1,0 +1,116 @@
+
+html {
+    font-size: 20px;
+}
+header {
+  background-color: black;
+  margin: -1rem;
+}
+.main-nav {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  font-size: 25px;
+  justify-content: space-evenly;
+  color: white;
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 300px;
+  padding-left: 34px;
+}
+.main {
+  border-color: lightblue;
+  margin: -1rem;
+  padding: 50px;
+  background-image: linear-gradient(#2c3e50, #3498db);
+  max-width: 100%;
+  font: 300 100%/1.5 'Crimson Text', serif; 
+}
+.container {
+	width: 94.02985075%;
+	max-width: 1260px;
+	background: #fff;
+	margin: auto;
+}
+
+.photo-container {
+	text-align: center;
+	margin-bottom: 4em;
+}
+
+.photo {
+	position: relative;
+	line-height: 0;
+	overflow: hidden;
+}
+ img {
+ 	max-width: 100%;
+  max-height: 13em;
+}
+
+.viper {
+  width: 15em;
+}
+.nissan {
+  width: 9em;
+  padding-right: 7px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .65);
+}
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+.photo-overlay {
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: .5s;
+}
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.button {
+  display: block;
+  width: 200px;
+  padding: .25rem 1rem;
+  border-radius: 20px/10px; 
+  margin: 1rem auto;
+  box-shadow: 3px 4px 5px rgba(0,10,30,.8);
+  background-color: #cc4e13;
+  color: white;
+  text-align: center;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+@media screen and (min-width: 720px) {
+    header {
+      padding: 20vh 1rem;
+    }
+    h1 {
+      font-size: 5rem; 
+    }
+    .title {
+      font-size: 1.25rem; 
+    }
+  }
